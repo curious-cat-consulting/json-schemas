@@ -19,7 +19,7 @@
       "type": "string",
       "description": "The title of the blog post being referenced.",
       "minLength": 1
-    }
+    },
     "post_title": {
       "type": "string",
       "description": "The title of the blog post.",
