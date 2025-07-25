@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "LinkedIn Blog Post Schema",
-  "description": "Schema for validating the structure of a LinkedIn blog post's title, content, and summary.",
+  "description": "Schema for validating the structure of a LinkedIn blog post's title, content, and DALL-E image prompt.",
   "type": "object",
   "required": [
     "post_title",
     "post_content",
-    "blog_summary"
+    "dalle_image_prompt"
   ],
   "properties": {
     "post_title": {
@@ -19,9 +19,9 @@
       "description": "Compelling 1-3 sentence LinkedIn post content, including several related hashtags.",
       "minLength": 1
     },
-    "blog_summary": {
+    "dalle_image_prompt": {
       "type": "string",
-      "description": "A descriptive summary of the blog post (about 3-5 sentences), used for image generation.",
+      "description": "A descriptive DALL-E prompt for a hand-drawn digital illustration in a cartoonish, expressive style, based on the blog post's content. This prompt will be used to generate an image for the LinkedIn post.",
       "minLength": 1
     }
   }
