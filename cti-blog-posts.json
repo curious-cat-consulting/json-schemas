@@ -4,6 +4,8 @@
   "description": "Schema for validating the structure of a LinkedIn blog post's title, content, and DALL-E image prompt.",
   "type": "object",
   "required": [
+    "blog_url",
+    "blog_title",
     "post_title",
     "post_content",
     "dalle_image_prompt"
@@ -11,13 +13,13 @@
   "properties": {
     "blog_url": {
       "type": "string",
-      "description": "The URL of the blog post being referenced.",
+      "description": "The URL of the chosen blog post being referenced.",
       "format": "uri",
       "minLength": 1
     },
     "blog_title": {
       "type": "string",
-      "description": "The title of the blog post being referenced.",
+      "description": "The title of the chosen blog post being referenced.",
       "minLength": 1
     },
     "post_title": {
