@@ -9,6 +9,17 @@
     "dalle_image_prompt"
   ],
   "properties": {
+    "blog_url": {
+      "type": "string",
+      "description": "The URL of the blog post being referenced.",
+      "format": "uri",
+      "minLength": 1
+    },
+    "blog_title": {
+      "type": "string",
+      "description": "The title of the blog post being referenced.",
+      "minLength": 1
+    }
     "post_title": {
       "type": "string",
       "description": "The title of the blog post.",
