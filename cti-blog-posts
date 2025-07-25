@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LinkedIn Blog Post Schema",
+  "description": "Schema for validating the structure of a LinkedIn blog post's title, content, and summary.",
+  "type": "object",
+  "required": [
+    "post_title",
+    "post_content",
+    "blog_summary"
+  ],
+  "properties": {
+    "post_title": {
+      "type": "string",
+      "description": "The title of the blog post.",
+      "minLength": 1
+    },
+    "post_content": {
+      "type": "string",
+      "description": "Compelling 1-3 sentence LinkedIn post content, including several related hashtags.",
+      "minLength": 1
+    },
+    "blog_summary": {
+      "type": "string",
+      "description": "A descriptive summary of the blog post (about 3-5 sentences), used for image generation.",
+      "minLength": 1
+    }
+  }
+}
